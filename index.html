@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adventoure | Viejes y Turismo Aventura</title>
+  <!-- LINK A FONTAVESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- LINK BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- LINK A MI CSS -->
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <header class="header-container">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html"><img class="logo-nav" src="./assets/images/logo-transparente.png" alt=""></a>
+        <button class="burger-button navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="/index.html">Inicio</a>
+            <a class="nav-link" href="./pages/about.html">Nosotros</a>
+            <a class="nav-link" href="./pages/login.html">Login</a>
+            <a class="nav-link" href="./pages/contact.html">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="main-container">
+    <section class="banner-container">
+      <div class="banner-content">
+        <h3 class="subtitle-banner">Explora el mundo</h3>
+        <h1>Viajes y Turismo Aventura</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit in quaerat fugiat mollitia.</p>
+        <button class="button-banner">Empecemos</button>
+      </div>
+      </div>
+    </section>
+    <section class="form-search-container">
+      <form class="form-search">
+        <div class="input-group">
+          <div class="text-label">
+            <i class="fa-solid fa-location-dot"></i>
+            <label for="destino">Destino</label>
+          </div>
+          <select class="select-search" name="destino" id="destino">
+            <option value="cordoba">Cordoba</option>
+            <option value="mendoza">Mendoza</option>
+            <option value="salta">Salta</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <div class="text-label">
+            <i class="fa-solid fa-clipboard-list"></i>
+            <label for="tipo">Tipo</label>
+          </div>
+          <select class="select-search" name="tipo" id="tipo">
+            <option value="reserva">Reserva</option>
+            <option value="consulta">Consulta</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <div class="text-label">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <label for="duracion">Duración</label>
+          </div>
+          <select class="select-search" name="duracion" id="duracion">
+            <option value="5">5 días</option>
+            <option value="10">10 días</option>
+            <option value="12">12 días</option>
+            <option value="15">15 días</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <div class="text-label">
+            <i class="fa-solid fa-person"></i>
+            <label for="huespedes">Huespedes</label>
+          </div>
+          <select class="select-search" name="huespedes" id="huespedes">
+            <option value="1">1 persona</option>
+            <option value="2">2 personas</option>
+            <option value="3">3 personas</option>
+            <option value="4">4 personas</option>
+          </select>
+        </div>
+        <button class="button-search">Buscar</button>
+      </form>
+    </section>
+    <section class="presentacion-container">
+      <div class="presentacion-content">
+        <img class="img-presentacion" src="./assets/images/presentacion.jpg" alt="">
+        <div class="text-presentacion">
+          <h2 class="title-presentacion">Una gran oportunidad par un viaje de aventura</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde iusto totam in placeat amet minima
+            nostrum a! Ullam, amet quisquam?</p>
+          <div class="detail">
+            <div class="detail-presentacion">
+              <i class="fa-solid fa-person-hiking"></i>
+              <h3>Guias de viaje de Confianza</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione illo ullam distinctio quod
+                sed. Odio?</p>
+            </div>
+            <div class="detail-presentacion">
+              <i class="fa-solid fa-route"></i>
+              <h3>Viajes Personalizados</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione illo ullam distinctio quod
+                sed. Odio?</p>
+            </div>
+          </div>
+          <button class="button-presentacion">Mas sobre nosotros</button>
+        </div>
+      </div>
+    </section>
+    <section class="products-container">
+      <div class="products-content">
+        <h2 class="title-products">Increibles Paquetes Turisticos del Mundo</h2>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-header">
+              <a href="./pages/product.html"><img class="card-img" src="../assets/images/products/riviera-maya-1.jpg"
+                  alt="imagen de playa en Rievera Maya"></a>
+              <div class="actions">
+                <a href="#" class="link-actions"><i class="fa-regular fa-eye"></i></a>
+                <a href="#" class="link-actions"><i class="fa-regular fa-heart"></i></a>
+              </div>
+            </div>
+            <div class="card-main">
+              <h5 class="card-category">Destacado</h5>
+              <a href="./pages/product.html">
+                <h3 class="card-title">Rivera Maya, México</h3>
+              </a>
+
+              <div class="card-info">
+                <div class="icon-info">
+                  <i class="fa-regular fa-clock"></i>
+                  <p class="card-days">5 días y 6 noches</p>
+                </div>
+
+
+                <div class="icon-info">
+                  <i class="fa-regular fa-user"></i>
+                  <p class="card-cupos">12 personas</p>
+                </div>
+              </div>
+              <div class="card-average">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-regular fa-star star"></i>
+                (4)
+              </div>
+              <div class="card-price">
+                <span class="price">$ 1.200.000</span>
+                <span class="normal-price">$ 1.500.000</span>
+              </div>
+              <div class="quantity">
+                <p class="selection-label">Cant. Personas</p>
+                <div class="quantity-actions">
+                  <div class="quantity-button">
+                    <button><i class="fa-solid fa-minus icon-white"></i></button>
+                    <div>1</div>
+                    <button><i class="fa-solid fa-plus icon-white"></i></button>
+                  </div>
+                  <button class="add-to-card">Reservar</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <a href="./pages/product.html"><img class="card-img" src="./assets/images/products/riviera-maya-1.jpg"
+                  alt="imagen de playa en Rievera Maya"></a>
+
+              <div class="actions">
+                <a href="#" class="link-actions"><i class="fa-regular fa-eye"></i></a>
+                <a href="#" class="link-actions"><i class="fa-regular fa-heart"></i></a>
+              </div>
+            </div>
+            <div class="card-main">
+              <h5 class="card-category">Destacado</h5>
+              <a href="./pages/product.html">
+                <h3 class="card-title">Rivera Maya, México</h3>
+              </a>
+
+              <div class="card-info">
+                <div class="icon-info">
+                  <i class="fa-regular fa-clock"></i>
+                  <p class="card-days">5 días y 6 noches</p>
+                </div>
+
+
+                <div class="icon-info">
+                  <i class="fa-regular fa-user"></i>
+                  <p class="card-cupos">12 personas</p>
+                </div>
+              </div>
+              <div class="card-average">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-regular fa-star star"></i>
+                (4)
+              </div>
+              <div class="card-price">
+                <span class="price">$ 1.200.000</span>
+                <span class="normal-price">$ 1.500.000</span>
+              </div>
+              <div class="quantity">
+                <p class="selection-label">Cant. Personas</p>
+                <div class="quantity-actions">
+                  <div class="quantity-button">
+                    <button><i class="fa-solid fa-minus icon-white"></i></button>
+                    <div>1</div>
+                    <button><i class="fa-solid fa-plus icon-white"></i></button>
+                  </div>
+                  <button class="add-to-card">Reservar</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <a href="./pages/product.html"><img class="card-img" src="./assets/images/products/riviera-maya-1.jpg"
+                  alt="imagen de playa en Rievera Maya"></a>
+
+              <div class="actions">
+                <a href="#" class="link-actions"><i class="fa-regular fa-eye"></i></a>
+                <a href="#" class="link-actions"><i class="fa-regular fa-heart"></i></a>
+              </div>
+            </div>
+            <div class="card-main">
+              <h5 class="card-category">Destacado</h5>
+              <a href="./pages/product.html">
+                <h3 class="card-title">Rivera Maya, México</h3>
+              </a>
+
+              <div class="card-info">
+                <div class="icon-info">
+                  <i class="fa-regular fa-clock"></i>
+                  <p class="card-days">5 días y 6 noches</p>
+                </div>
+
+
+                <div class="icon-info">
+                  <i class="fa-regular fa-user"></i>
+                  <p class="card-cupos">12 personas</p>
+                </div>
+              </div>
+              <div class="card-average">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-regular fa-star star"></i>
+                (4)
+              </div>
+              <div class="card-price">
+                <span class="price">$ 1.200.000</span>
+                <span class="normal-price">$ 1.500.000</span>
+              </div>
+              <div class="quantity">
+                <p class="selection-label">Cant. Personas</p>
+                <div class="quantity-actions">
+                  <div class="quantity-button">
+                    <button><i class="fa-solid fa-minus icon-white"></i></button>
+                    <div>1</div>
+                    <button><i class="fa-solid fa-plus icon-white"></i></button>
+                  </div>
+                  <button class="add-to-card">Reservar</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <a href="./pages/product.html"><img class="card-img" src="./assets/images/products/riviera-maya-1.jpg"
+                  alt="imagen de playa en Rievera Maya"></a>
+
+              <div class="actions">
+                <a href="#" class="link-actions"><i class="fa-regular fa-eye"></i></a>
+                <a href="#" class="link-actions"><i class="fa-regular fa-heart"></i></a>
+              </div>
+            </div>
+            <div class="card-main">
+              <h5 class="card-category">Destacado</h5>
+              <a href="./pages/product.html">
+                <h3 class="card-title">Rivera Maya, México</h3>
+              </a>
+
+              <div class="card-info">
+                <div class="icon-info">
+                  <i class="fa-regular fa-clock"></i>
+                  <p class="card-days">5 días y 6 noches</p>
+                </div>
+
+
+                <div class="icon-info">
+                  <i class="fa-regular fa-user"></i>
+                  <p class="card-cupos">12 personas</p>
+                </div>
+              </div>
+              <div class="card-average">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-regular fa-star star"></i>
+                (4)
+              </div>
+              <div class="card-price">
+                <span class="price">$ 1.200.000</span>
+                <span class="normal-price">$ 1.500.000</span>
+              </div>
+              <div class="quantity">
+                <p class="selection-label">Cant. Personas</p>
+                <div class="quantity-actions">
+                  <div class="quantity-button">
+                    <button><i class="fa-solid fa-minus icon-white"></i></button>
+                    <div>1</div>
+                    <button><i class="fa-solid fa-plus icon-white"></i></button>
+                  </div>
+                  <button class="add-to-card">Reservar</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <a href="./pages/product.html"><img class="card-img" src="./assets/images/products/riviera-maya-1.jpg"
+                  alt="imagen de playa en Rievera Maya"></a>
+
+              <div class="actions">
+                <a href="#" class="link-actions"><i class="fa-regular fa-eye"></i></a>
+                <a href="#" class="link-actions"><i class="fa-regular fa-heart"></i></a>
+              </div>
+            </div>
+            <div class="card-main">
+              <h5 class="card-category">Destacado</h5>
+              <a href="./pages/product.html">
+                <h3 class="card-title">Rivera Maya, México</h3>
+              </a>
+
+              <div class="card-info">
+                <div class="icon-info">
+                  <i class="fa-regular fa-clock"></i>
+                  <p class="card-days">5 días y 6 noches</p>
+                </div>
+
+
+                <div class="icon-info">
+                  <i class="fa-regular fa-user"></i>
+                  <p class="card-cupos">12 personas</p>
+                </div>
+              </div>
+              <div class="card-average">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-regular fa-star star"></i>
+                (4)
+              </div>
+              <div class="card-price">
+                <span class="price">$ 1.200.000</span>
+                <span class="normal-price">$ 1.500.000</span>
+              </div>
+              <div class="quantity">
+                <p class="selection-label">Cant. Personas</p>
+                <div class="quantity-actions">
+                  <div class="quantity-button">
+                    <button><i class="fa-solid fa-minus icon-white"></i></button>
+                    <div>1</div>
+                    <button><i class="fa-solid fa-plus icon-white"></i></button>
+                  </div>
+                  <button class="add-to-card">Reservar</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <button class="button-products">Ver todos los Tours</button>
+      </div>
+    </section>
+    <section class="actividades-container">
+      <div class="actividades-content">
+        <h2 class="title-actividades">Actividades</h2>
+        <div class="article-actividades">
+          <article>
+            <img class="img-actividad" src="./assets/images/camping.png" alt="imagen de campamento">
+            <h4 class="text-actividad">Camping o Cabañas</h4>
+          </article>
+          <article>
+            <img class="img-actividad" src="./assets/images/escalada.png" alt="hombre haciendo escalada">
+            <h4 class="text-actividad">Aventura y Escalada</h4>
+          </article>
+          <article>
+            <img class="img-actividad" src="./assets/images/pesca.png" alt="imagen de pesca">
+            <h4 class="text-actividad">Pesca y Actividades Acuaticas</h4>
+          </article>
+          <article>
+            <img class="img-actividad" src="./assets/images/tracking.png" alt="imgen de persona haciendo tracking">
+            <h4 class="text-actividad">Senderismo en Montañas y Colinas</h4>
+          </article>
+          <article>
+            <img class="img-actividad" src="./assets/images/ski.png" alt="">
+            <h4 class="text-actividad">Vehículos Recreativos y Deportivos</h4>
+          </article>
+        </div>
+        <div class="cta-actividades">
+          <img class="img-cta-actividades" src="./assets/images/surf-perrito.jpg"
+            alt="imagen de una chica en la cima de montaña con perritos">
+          <div class="actividades-cta">
+            <h4>Bienvenidos a una nueva experiencia</h4>
+            <h3>Disfruta una Verdadera Aventura en las Vacaciones de Tus Sueños</h3>
+            <div class="items-cta">
+              <div class="item-cta">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <p>Senti la verdadera Aventura</p>
+              </div>
+              <div class="item-cta">
+                <i class="fa-solid fa-life-ring"></i>
+                <p>Senti la verdadera Aventura</p>
+              </div>
+
+            </div>
+            <button class="button-cta-actividades button-white">Empeza ahora mismo</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-container">
+    <section class="footer-content">
+
+      <section class="footer-cta">
+        <!-- CTA -->
+        <h3>Estas listo para la Aventura y Disfrutar de la Naturaleza</h3>
+        <button class="button-white">Empecemos</button>
+      </section>
+
+      <section class="footer-columns">
+        <!-- COLUMNA 1 -->
+        <div class="footer-social">
+          <img class="logo-footer" src="./assets/images/logo-blanco.png" alt="logo de la empresa">
+          <!-- insertar logo -->
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, similique dignissimos dolores
+            fuga distinctio nihil.</p>
+          <div class="footer-info-container">
+            <div class="footer-info">
+              <i class="fa-solid fa-envelope"></i>
+              <p>email@.com</p>
+            </div>
+            <div class="footer-info">
+              <i class="fa-solid fa-phone"></i>
+              <p>+54 9 11 0000 0000</p>
+            </div>
+            <div class="footer-info">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Buenos Aires, Argentina</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- COLUMNA 2 -->
+        <div class="footer-menu">
+          <h4>Menu Navegación</h4>
+          <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./pages/about.html">Nosotros</a></li>
+            <li><a href="./pages/contact.html">Contacto</a></li>
+            <li><a href="./pages/login.html">Login</a></li>
+            <li><a href="./pages/poduct.html">Producto</a></li>
+          </ul>
+        </div>
+
+        <!-- COLUMNA 3 -->
+        <div class="footer-news">
+          <h4>Newsletter</h4>
+          <p>Suscribite y te enviamos info de los nuevos paquetes</p>
+          <div class="input-group-footer">
+            <form class="form-news">
+              <input type="text" placeholder="correo electronico">
+              <button class="button-news">Suscribite</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </section>
+  </footer>
+
+  <!-- SCRIPT BOOTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
