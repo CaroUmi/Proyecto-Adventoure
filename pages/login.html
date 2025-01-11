@@ -20,7 +20,8 @@
   <header class="header-container">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html"><img class="logo-nav" src="../assets/images/logo-transparente.png" alt=""></a>
+        <a class="navbar-brand" href="../index.html"><img class="logo-nav" src="../assets/images/logo-transparente.png"
+            alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -39,8 +40,10 @@
   <main class="main-container">
     <section class="banner-page-container" id="banner-login">
       <div class="banner-page-content">
-        <h2 class="title-banner">Login</h2>
-        <p class="breadcrumb">Inicio / Login</p>
+        <div class="banner-page">
+          <h2 class="title-banner">Login</h2>
+          <p class="breadcrumb">Inicio / Login</p>
+        </div>
       </div>
     </section>
     <section class="login-container">
@@ -48,7 +51,7 @@
         <div class="login">
           <h3 class="title-login">Login</h3>
           <form class="form-info">
-            <input class="input-info" type="text" id="nombre" placeholder="Nombre de usuario" required>
+            <input class="input-info" type="text" id="nombre" placeholder="Nombre de usuario" minlength="3" required>
             <input class="input-info" type="password" id="contrasenia" placeholder="Contraseña" required>
             <input type="submit" class="button" value="Ingresar">
           </form>
@@ -56,10 +59,11 @@
         <div class="register">
           <h3 class="title-login">Registrarse</h3>
           <form class="form-info ">
-            <input class="input-info" type="text" name="nombre" id="nombre" placeholder="Nombre de usuario" required>
+            <input class="input-info" type="text" name="nombre" id="nombre" placeholder="Nombre de usuario" minlength="3" required>
             <input class="input-info" type="email" name="email" id="email" placeholder="Correo electronico">
-            <input class="input-info" type="password" name="password" id="contrasenia" placeholder="Contraseña" required>
-            <input class="input-info" type="password-repeat" name="password-repeat" id="contrasenia-repeat"
+            <input class="input-info" type="password" name="password" id="contrasenia" placeholder="Contraseña"
+              required>
+            <input class="input-info" type="password" name="password-repeat" id="contrasenia-repeat"
               placeholder="Repetir Contraseña" required>
             <input type="submit" class="button" value="Registrarme">
           </form>
@@ -69,13 +73,11 @@
   </main>
   <footer class="footer-container">
     <section class="footer-content">
-
       <section class="footer-cta">
         <!-- CTA -->
         <h3>Estas listo para la Aventura y Disfrutar de la Naturaleza</h3>
         <button class="button-white">Empecemos</button>
       </section>
-
       <section class="footer-columns">
         <!-- COLUMNA 1 -->
         <div class="footer-social">
@@ -98,7 +100,6 @@
             </div>
           </div>
         </div>
-
         <!-- COLUMNA 2 -->
         <div class="footer-menu">
           <h4>Menu Navegación</h4>
@@ -109,14 +110,13 @@
             <li><a href="./login.html">Login</a></li>
           </ul>
         </div>
-
         <!-- COLUMNA 3 -->
         <div class="footer-news">
           <h4>Newsletter</h4>
           <p>Suscribite y te enviamos info de los nuevos paquetes</p>
           <div class="input-group-footer">
             <form class="form-news">
-              <input type="text" placeholder="correo electronico">
+              <input type="email" placeholder="correo electronico" required>
               <button class="button-news">Suscribite</button>
             </form>
           </div>

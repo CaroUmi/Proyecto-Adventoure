@@ -22,8 +22,9 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="../index.html"><img class="logo-nav" src="../assets/images/logo-transparente.png"
             alt=""></a>
-        <button class="burger-button navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="burger-button navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -40,8 +41,10 @@
   <main class="main-container">
     <section class="banner-page-container" id="banner-product">
       <div class="banner-page-content">
-        <h2 class="title-banner">Producto</h2>
-        <p class="breadcrumb">Inicio / Producto</p>
+        <div class="banner-page">
+          <h2 class="title-banner">Producto</h2>
+          <p class="breadcrumb">Inicio / Producto</p>
+        </div>
       </div>
     </section>
     <section class="product-container">
@@ -69,19 +72,19 @@
           <img class="img-product2" src="../assets/images/riviera-maya-3.jpg" alt="imagen playa rivera maya">
         </div>
         <div class="desciption-product">
-          <div>
-            <h3>Descripcion</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores accusamus expedita nesciunt,
-              sequi debitis alias? Possimus nobis repellat ad cum deserunt quod reprehenderit, molestiae eius
-              maiores cupiditate dignissimos qui culpa consequatur nemo temporibus laborum vero pariatur! At eaque
-              necessitatibus cum officiis suscipit deserunt totam tempora ut accusamus, iusto ea culpa animi
-              assumenda natus explicabo harum quasi odio, numquam veniam itaque? Eveniet aliquid minus
-              perspiciatis vel deleniti repudiandae illo ut quibusdam perferendis delectus, consectetur quasi
-              officia vitae magnam nihil assumenda? Nisi sint esse sequi magnam quibusdam quod, quo vitae, numquam
-              distinctio enim rerum praesentium officia nulla iusto alias doloremque, maxime ipsam.</p>
-          </div>
-          <div>
-            <div>
+          <div class="description-container">
+            <div class="description">
+              <h3>Descripcion</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores accusamus expedita nesciunt,
+                sequi debitis alias? Possimus nobis repellat ad cum deserunt quod reprehenderit, molestiae eius
+                maiores cupiditate dignissimos qui culpa consequatur nemo temporibus laborum vero pariatur! At eaque
+                necessitatibus cum officiis suscipit deserunt totam tempora ut accusamus, iusto ea culpa animi
+                assumenda natus explicabo harum quasi odio, numquam veniam itaque? Eveniet aliquid minus
+                perspiciatis vel deleniti repudiandae illo ut quibusdam perferendis delectus, consectetur quasi
+                officia vitae magnam nihil assumenda? Nisi sint esse sequi magnam quibusdam quod, quo vitae, numquam
+                distinctio enim rerum praesentium officia nulla iusto alias doloremque, maxime ipsam.</p>
+            </div>
+            <div class="instalaciones">
               <h3>Instalaciones</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores accusamus expedita nesciunt,
                 sequi debitis alias? Possimus nobis repellat ad cum deserunt quod reprehenderit, molestiae eius
@@ -92,93 +95,91 @@
                 officia vitae magnam nihil assumenda? Nisi sint esse sequi magnam quibusdam quod, quo vitae, numquam
                 distinctio enim rerum praesentium officia nulla iusto alias doloremque, maxime ipsam.</p>
             </div>
+            <div class="itinerario">
+              <h3>Itinerario</h3>
+              <table class="table-product">
+                <thead>
+                  <tr>
+                    <th class="header-table">Día y Hora de Salida</th>
+                    <th class="header-table">Desde / Hasta</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="row-table">01/01/2025 10:00 am</td>
+                    <td class="row-table">Buenos Aires, Argentina / Rivera Maya, México</td>
+                  </tr>
+                  <tr>
+                    <td class="row-table">08/01/2025 18:00 pm</td>
+                    <td class="row-table">Rivera Maya, México / Buenos Aires, Argentina</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="check-product">
+              <h3 class="title-check-product">Incluido</h3>
+              <ul>
+                <li><i class="fa-solid fa-check"></i>Servicio de recogida y entrega</li>
+                <li><i class="fa-solid fa-check"></i>Cena y eventos musicales</li>
+                <li><i class="fa-solid fa-check"></i>Servicio de recogida y entrega</li>
+                <li><i class="fa-solid fa-check"></i>Cena y eventos musicales</li>
+                <li><i class="fa-solid fa-check"></i>Servicio de recogida y entrega</li>
+                <li><i class="fa-solid fa-check"></i>Cena y eventos musicales</li>
+              </ul>
+            </div>
           </div>
-          <div>
-            <h3>Itinerario</h3>
-            <table class="table-product">
-              <thead>
-                <tr>
-                  <th class="header-table">Día y Hora de Salida</th>
-                  <th class="header-table">Desde / Hasta</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="row-table">01/01/2025 10:00 am</td>
-                  <td class="row-table">Buenos Aires, Argentina / Rivera Maya, México</td>
-                </tr>
-                <tr>
-                  <td class="row-table">08/01/2025 18:00 pm</td>
-                  <td class="row-table">Rivera Maya, México / Buenos Aires, Argentina</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="check-product">
-            <h3 class="title-check-product">Incluido</h3>
-            <ul>
-              <li><i class="fa-solid fa-check"></i>Servicio de recogida y entrega</li>
-              <li><i class="fa-solid fa-check"></i>Cena y eventos musicales</li>
-              <li><i class="fa-solid fa-check"></i>Servicio de recogida y entrega</li>
-              <li><i class="fa-solid fa-check"></i>Cena y eventos musicales</li>
-              <li><i class="fa-solid fa-check"></i>Servicio de recogida y entrega</li>
-              <li><i class="fa-solid fa-check"></i>Cena y eventos musicales</li>
-            </ul>
+          <div class="booking-content">
+            <h3 class="title-booking">Reserva este tuor</h3>
+            <form class="form-info">
+              <div class="input-group">
+                <label class="title-reserva" for="fecha-salida">Selecione la fecha de salida</label>
+                <input class="input-info" type="date" name="fecha-salida" id="fecha-salida"
+                  placeholder="Selecciona un fecha de salida" required>
+              </div>
+              <div>
+                <div class="input-group">
+                  <label class="title-reserva" for="horario">Hora de entrada</label>
+                  <div class="radio-button">
+                    <label for="opcion1">
+                      <input class="input-info" type="radio" id="horario" name="10am" value="opcion1">10:00 am
+                    </label>
+                    <label for="opcion2">
+                      <input class="input-info" type="radio" id="horario" name="10am" value="opcion1">16:00 pm
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="input-group">
+                <div class="input-group">
+                  <label class="title-reserva" for="adultos">Adultos</label>
+                  <input class="input-info" type="number" id="adultos">
+                </div>
+                <div class="input-group">
+                  <label class="title-reserva" for="menores">Menores</label>
+                  <input class="input-info" type="number" id="menores">
+                </div>
+              </div>
+              <div>
+                <div class="input-group">
+                  <label class="title-reserva" for="">Servicios opcionales</label>
+                  <div class="option-checkbox">
+                    <label for="opcion1"> <input type="checkbox" id="opcion1" name="opciones" value="opcion1"> Opción 1
+                    </label>
+                    <label for="opcion2"> <input type="checkbox" id="opcion2" name="opciones" value="opcion2"> Opción 2
+                    </label>
+                    <label for="opcion3"> <input type="checkbox" id="opcion3" name="opciones" value="opcion3"> Opción 3
+                    </label>
+                    <label for="opcion4"> <input type="checkbox" id="opcion4" name="opciones" value="opcion4"> Opción 4
+                    </label>
+                    <label for="opcion5"> <input type="checkbox" id="opcion5" name="opciones" value="opcion5"> Opción 5
+                    </label>
+                    <input class="button" type="submit" value="Realizar reserva">
+                  </div>
+            </form>
           </div>
         </div>
-
       </div>
-      <section class="booking-content">
-        <h3 class="title-booking">Reserva este tuor</h3>
-        <form class="form-info">
-          <div class="input-group">
-            <label class="title-reserva" for="">Selecione la fecha de salida</label>
-            <input class="input-info" type="date" name="fecha-salida" id="fecha-salida"
-              placeholder="Selecciona un fecha de salida">
-          </div>
-          <div>
-            <div class="input-group">
-              <label class="title-reserva" for="">Hora de entrada</label>
-              <div class="radio-button">
-                <label for="opcion1">
-                  <input class="input-info" type="radio" id="horario" name="10am" value="opcion1">10:00 am
-                </label>
-                <label for="opcion2">
-                  <input class="input-info" type="radio" id="horario" name="10am" value="opcion1">16:00 pm
-                </label>
-              </div>
-            </div>
-          </div>
-          <div class="input-group">
-            <div class="input-group">
-              <label class="title-reserva" for="adultos">Adultos</label>
-              <input class="input-info" type="number" id="adultos">
-            </div>
-            <div class="input-group">
-              <label class="title-reserva" for="menores">Menores</label>
-              <input class="input-info" type="number" id="menores">
-            </div>
-          </div>
-          <div>
-            <div class="input-group">
-              <label class="title-reserva" for="">Servicios opcionales</label>
-              <div class="option-checkbox">
-                <label for="opcion1"> <input type="checkbox" id="opcion1" name="opciones" value="opcion1"> Opción 1
-                </label>
-                <label for="opcion2"> <input type="checkbox" id="opcion2" name="opciones" value="opcion2"> Opción 2
-                </label>
-                <label for="opcion3"> <input type="checkbox" id="opcion3" name="opciones" value="opcion3"> Opción 3
-                </label>
-                <label for="opcion4"> <input type="checkbox" id="opcion4" name="opciones" value="opcion4"> Opción 4
-                </label>
-                <label for="opcion5"> <input type="checkbox" id="opcion5" name="opciones" value="opcion5"> Opción 5
-                </label>
-                <input class="button" type="submit" value="Realizar reserva">
-              </div>
-        </form>
-      </section>
     </section>
-
   </main>
   <footer class="footer-container">
     <section class="footer-content">
@@ -229,7 +230,7 @@
           <p>Suscribite y te enviamos info de los nuevos paquetes</p>
           <div class="input-group-footer">
             <form class="form-news">
-              <input type="text" placeholder="correo electronico">
+              <input type="email" placeholder="correo electronico" required>
               <button class="button-news">Suscribite</button>
             </form>
           </div>
