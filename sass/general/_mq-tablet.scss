@@ -1,0 +1,176 @@
+@import '../utilidades/variables';
+@import '../utilidades/mixin';
+
+/* ? =============== MEDIAS QUERY ======================*/
+@media screen and (width > 768px) {
+  html {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .banner-container .banner-content {
+    h1 {
+    width: 30rem;
+  } 
+  p {
+    width: 30rem;
+  }
+  }
+
+  /* ----- ESTILOS INDEX ----- */
+  .form-search {
+    @include flex-wrap-justify-center;
+
+    .input-group {
+      width: 48%;
+    }
+  }
+
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .article-actividades {
+    @include flex-wrap-justify-center;
+  }
+
+  .items-cta {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 0 !important;
+  }
+
+  .footer-container {
+    position: relative;
+
+    .footer-content {
+      @include flex-justify-center;
+
+      .footer-cta {
+        @include flex-aling-center;
+        justify-content: space-between;
+        gap: 2rem;
+        width: 80%;
+        padding: 2rem;
+        background-color: $button;
+        position: absolute;
+        top: -30px;
+      }
+
+      .button-white {
+        color: $color-highlight;
+      }
+
+      .footer-columns {
+        padding-top: 5rem;
+        display: flex;
+        @include flex-wrap-justify-center;
+
+        .footer-social,
+        .footer-info,
+        .footer-news {
+          flex: 1;
+        }
+      }
+    }
+  }
+
+  /* ----- ESTILOS ABOUT ----- */
+
+  .about-container {
+    .about-content {
+      display: flex;
+      gap: 1rem;
+
+      .about-img-container {
+        flex: 1;
+        position: relative;
+
+        .img-mission {
+          width: 70%;
+          height: 400px;
+          object-fit: cover;
+        }
+
+        .img-mission1 {
+          display: block;
+        }
+
+        .img-mission2 {
+          position: absolute;
+          top: 10%;
+          left: 25%;
+        }
+      }
+
+      .text-about-container {
+        flex: 1;
+      }
+    }
+  }
+
+  .team-container {
+    .team-content {
+      width: 100%;
+
+      .team {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+
+  /* ----- ESTILOS LOGIN ----- */
+
+  .login-container {
+    width: 100%;
+
+    .login-content {
+      flex-direction: row;
+
+      .login,
+      .register {
+        flex: 1;
+      }
+    }
+  }
+
+  /* ----- ESTILOS LOGIN ----- */
+
+  .contact-container {
+    .contact-content {
+      flex-direction: row;
+
+      .contact-info,
+      .contact-form {
+        flex: 1;
+      }
+    }
+  }
+
+  /* ----- ESTILOS PRODUCT ----- */
+  .product-container {
+
+    .product-content {
+
+      .img-product {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .product-detail {
+        .product-info {
+          flex-direction: row;
+          gap: 2rem;
+        }
+      }
+
+      .desciption-product {
+        flex-direction: row;
+      }
+
+      .check-product ul li {
+        width: 100%;
+      }
+    }
+  }
+}

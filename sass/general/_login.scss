@@ -1,0 +1,31 @@
+@import '../utilidades/variables';
+@import '../utilidades/mixin';
+
+/* ! ESTILOS LOGIN --------------------------------------- */
+#banner-login {
+  background-image: url(../assets/images/img-login.jpg);
+}
+
+.login-container {
+  @include flex-column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+
+  .login-content {
+    width: 80%;
+    @include flex-column;
+    gap: 2rem;
+    border-radius: 5px;
+
+    .login,
+    .register {
+      background-color: $background-light;
+      padding: 2rem;
+
+      .title-login {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

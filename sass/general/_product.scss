@@ -1,0 +1,128 @@
+@import '../utilidades/variables';
+@import '../utilidades/mixin';
+
+/* ! ESTILOS PRODUCT --------------------------------------- */
+#banner-product {
+  background-image: url(../assets/images/img-producto.jpg);
+}
+
+.product-container {
+  width: 100%;
+  @include flex-column;
+  justify-content: center;
+  align-items: center;
+
+  .product-content {
+    width: 90%;
+
+    .product-detail {
+      margin: 1rem auto;
+
+      .product-info {
+        @include flex-column;
+        margin: 1rem auto;
+
+        .detail-info {
+          @include flex-aling-center;
+          margin-bottom: .5rem;
+          gap: .5rem;
+        }
+      }
+    }
+
+    .img-product {
+      /* ----------------- DISPLAY GRID -----------------------*/
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: .5rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .img-product1 {
+        grid-column-start: span 2;
+      }
+    }
+
+    .desciption-product {
+      @include flex-column;
+      gap: 2rem;
+      margin: 2rem auto;
+
+      h3 {
+        margin-top: 1rem;
+      }
+      .table-product {
+
+        th,
+        td {
+          font-size: .85rem;
+          padding: .3rem;
+          border: 1px solid $text-light;
+        }
+
+        th {
+          background-color: $text-light;
+          color: $text-white;
+        }
+      }
+    }
+
+    .check-product {
+
+      ul {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 1rem;
+
+        li {
+          font-size: .8rem;
+          width: 48%;
+          margin-bottom: .3rem;
+
+          i {
+            margin-right: .3rem;
+          }
+        }
+      }
+    }
+  }
+
+  .booking-content {
+    width: 90%;
+    background-color: $background-light;
+    padding: 2rem;
+    font-size: .8rem;
+
+    .input-group {
+      @include flex-column;
+
+      .title-reserva {
+        margin-bottom: .5rem;
+      }
+
+      .radio-button {
+        @include flex-column;
+        justify-content: center;
+        gap: .3rem;
+
+        input {
+          margin-right: .5rem;
+        }
+      }
+      .option-checkbox {
+        @include flex-column;
+        gap: .3rem;
+        margin-bottom: 2rem;
+      }
+      .button {
+        width: 100%;
+        margin-top: 1.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+
+//mixin para flex column
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+//mixin para flex justify content center
+@mixin flex-justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flex-aling-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-wrap-justify-center {
+  flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@mixin grid ($display, $columns, $gap) {
+  display: $display;
+  grid-template-columns: $columns;
+  grid-gap: $gap;
+}

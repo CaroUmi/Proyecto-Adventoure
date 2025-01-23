@@ -1,0 +1,208 @@
+// IMPORTACION DE GOOGLE FONTS
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Yesteryear&display=swap');
+
+@import '../utilidades/variables';
+@import '../utilidades/mixin';
+
+// ESTILOS RESET Y GENERALES
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-princial;
+  min-height: 100vh;
+  @include flex-column;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: .8rem;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: .6rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: .85rem;
+  color: $text-light;
+  margin-bottom: 0;
+}
+
+a,
+.menu-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: $text-dark;
+
+  &:hover {
+    color: $color-highlight;
+  }
+}
+
+ul li {
+  list-style: none;
+
+}
+
+span {
+  font-weight: bold;
+}
+
+/* ESTILOS DE BOTONES */
+button,
+.button {
+  font-size: .87rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: $button;
+  color: $text-white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  box-shadow: $box-shadow;
+  transition: all .5s ease;
+}
+
+button:hover,
+.button:hover {
+  background-color: #ff970d;
+  box-shadow: $box-shadow;
+  cursor: pointer;
+}
+
+.button-white {
+  background-color: $text-white;
+  color: $button;
+  box-shadow: $box-shadow;
+  transition: all .5s ease;
+  cursor: pointer;
+
+  &:hover {
+    color: $text-white;
+    box-shadow: $box-shadow;
+  }
+}
+
+.star {
+  color: $star;
+  font-size: .8rem;
+}
+
+i {
+  color: $color-highlight;
+}
+
+.icon-white {
+  color: $text-white;
+}
+
+/* ESTILO FORMULARIOS */
+.form-info {
+  @include flex-column;
+  gap: .9rem;
+
+  .input-info {
+    font-size: .9rem;
+    color: $text-light;
+    padding: .5rem;
+    border: none;
+    outline: none;
+    font-size: .9rem;
+
+    &:focus {
+      border-bottom: 1px solid $button-hover;
+    }
+  }
+
+  .button {
+    width: 180px;
+  }
+}
+
+/* ESTILO NAV */
+.header-container {
+  z-index: 2;
+
+  .navbar>.container-fluid,
+  .navbar>.container-lg,
+  .navbar>.container-md,
+  .navbar>.container-sm,
+  .navbar>.container-xl,
+  .navbar>.container-xxl {
+
+    max-width: 1280px;
+
+  }
+
+  .navbar {
+    box-shadow: $box-shadow;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    .burger-button {
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+
+    .logo-nav {
+      width: 180px;
+    }
+
+    .nav-link {
+      font-weight: bold;
+    }
+  }
+}
+
+/* !ESTILOS CONTAINERS PRINCIPALES --------------------------------------- */
+
+.main-container {
+  @include flex-column;
+  flex: 1;
+  margin-top: 3.5rem;
+}
+
+.banner-page-container {
+  height: 300px;
+  background-position: center;
+  @include flex-justify-center;
+  align-items: center;
+
+  .banner-page-content {
+
+    .banner-page {
+      text-align: center;
+      padding: 1.5rem 3rem;
+      background-color: $background-transparency;
+
+      .title-banner,
+      .breadcrumb {
+        color: $text-white;
+      }
+    }
+  }
+}

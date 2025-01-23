@@ -1,0 +1,51 @@
+/* ! ESTILOS CONTACT --------------------------------------- */
+@import '../utilidades/variables';
+@import '../utilidades/mixin';
+
+/* BANNER */
+#banner-contact {
+  background-image: url(../assets/images/img-contact.jpg);
+}
+
+.contact-container {
+
+  .contact-content {
+    width: 90%;
+    @include flex-column;
+    margin: 3rem auto;
+
+    h3 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .contact-info {
+      padding: 2rem;
+
+      .info {
+        margin-top: 1rem;
+
+        .info-detail {
+          font-weight: bold;
+          @include flex-aling-center;
+          gap: .5rem;
+          margin-bottom: .5rem;
+        }
+      }
+    }
+
+    .contact-form {
+      background-color: $background-light;
+      padding: 2rem;
+    }
+  }
+}
+
+.location-container {
+  text-align: center;
+  margin: 3rem 0;
+
+  iframe {
+    width: 100%;
+  }
+}

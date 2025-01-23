@@ -1,0 +1,72 @@
+/* ! ESTILOS ABOUT --------------------------------------- */
+@import '../utilidades/variables';
+@import '../utilidades/mixin';
+
+#banner-about {
+  background-image: url(/assets/images/img-about.jpg);
+}
+
+.about-container {
+  @include flex-justify-center;
+  margin: 3rem 0;
+
+  .about-content {
+    width: 90%;
+
+    .about-img-container {
+
+      .img-mission1 {
+        display: none;
+      }
+
+      .img-mission {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+
+    .text-about-container {
+      margin-top: 1.5rem;
+
+      .text-missdion {
+        margin-top: .8rem;
+      }
+    }
+  }
+}
+
+.team-container {
+  @include flex-justify-center;
+  text-align: center;
+  padding: 3rem 0;
+  background-color: $background-light;
+
+  .team-content {
+    width: 90%;
+
+    .title-team {
+      margin-bottom: 2rem;
+    }
+
+    .team {
+      /* ----------------- DISPLAY GRID -----------------------*/
+      @include grid (grid, repeat(1, 1fr), 2rem);
+
+      .img-team {
+        width: 300px;
+        border-radius: 5px;
+      }
+
+      .puesto {
+        color: $color-highlight;
+        font-weight: bold;
+      }
+
+      .name-employee {
+        font-size: 1rem;
+        font-weight: bold;
+      }
+    }
+  }
+}

@@ -1,0 +1,132 @@
+@import '../utilidades/variables';
+@import '../utilidades/mixin';
+
+
+@media screen and (width > 1024px) {
+  .banner-container {
+    .banner-content {
+      width: 1280px;
+      margin: 0 auto;
+    }
+  }
+
+  .banner-page-container {
+    .banner-page-content {
+      max-width: 1280px;
+    }
+  }
+
+  /* FORMULARIO DE BUSQUEDA */
+  .form-search-container {
+    position: relative;
+
+    .form-search {
+      background-color: $text-white;
+      position: absolute;
+      top: -4rem;
+
+      .input-group {
+        width: 18%;
+      }
+
+      .button-search {
+        width: 18%;
+        margin: auto;
+      }
+    }
+  }
+
+  /* PRESENTACION */
+  .presentacion-container {
+
+    .presentacion-content {
+      max-width: 1280px;
+      margin: 5rem 0 3rem 0;
+      flex-direction: row;
+      gap: 2rem;
+
+      .img-presentacion,
+      .text-presentacion {
+        width: 50%;
+      }
+    }
+  }
+
+  /* CONTENEDOR PRODUCTOS */
+  .products-container {
+
+    .products-content {
+
+      .card-container {
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+
+  .actividades-container {
+    .actividades-content {
+      max-width: 1280px;
+
+      .cta-actividades {
+        flex-direction: row;
+
+        .img-cta-actividades,
+        .actividades-cta {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  .footer-columns {
+    max-width: 1280px;
+
+    .footer-social,
+    .footer-menu,
+    .footer-news {
+      width: 33%;
+    }
+  }
+
+  /* ------------- ESTILOS NOSOTROS ------------ */
+
+  .about-container {
+    .about-content {
+      max-width: 1280px;
+      margin: 3rem 0;
+
+      .about-img-container {
+        .img-mission {
+          height: 600px;
+        }
+      }
+    }
+  }
+
+  .team-container {
+    .team-content {
+      max-width: 1280px;
+      margin-bottom: 2rem;
+
+      .team {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+
+  /* ------------- ESTILOS CONTACT ------------ */
+  .contact-container {
+    .contact-content {
+      max-width: 1040PX;
+    }
+  }
+
+  /* ------------- ESTILOS PRODUCT ------------ */
+  .product-container {
+    .product-content {
+        width: 100%;
+        max-width: 1280px;
+    }
+}
+}
