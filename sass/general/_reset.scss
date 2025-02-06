@@ -206,3 +206,15 @@ i {
     }
   }
 }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .title-h1 {
+    font-size: 1.8rem;
+    margin: 3rem 2rem 1rem;
+    text-align: center;
+  }
+}

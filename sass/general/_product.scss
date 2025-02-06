@@ -18,6 +18,9 @@
     .product-detail {
       margin: 1rem auto;
 
+      .title-product {
+        font-size: 2rem;
+      }
       .product-info {
         @include flex-column;
         margin: 1rem auto;

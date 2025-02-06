@@ -8,11 +8,13 @@
 }
 
 .contact-container {
+  @include flex-justify-center;
+  margin-bottom: 6rem;
 
   .contact-content {
     width: 90%;
     @include flex-column;
-    margin: 3rem auto;
+    margin: 1rem auto;
 
     h3 {
       font-size: 1.2rem;

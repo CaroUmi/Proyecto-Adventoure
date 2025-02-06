@@ -183,6 +183,17 @@ i {
   color: #fff;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content .title-h1 {
+  font-size: 1.8rem;
+  margin: 3rem 2rem 1rem;
+  text-align: center;
+}
+
 /* !ESTILOS INDEX --------------------------------------- */
 /* ESTILOS BANNER */
 .banner-container {
@@ -525,7 +536,7 @@ i {
 .about-container {
   display: flex;
   justify-content: center;
-  margin: 3rem 0;
+  margin-bottom: 6rem;
 }
 .about-container .about-content {
   width: 90%;
@@ -587,7 +598,6 @@ i {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 3rem 0;
 }
 .login-container .login-content {
   width: 80%;
@@ -595,6 +605,7 @@ i {
   flex-direction: column;
   gap: 2rem;
   border-radius: 5px;
+  margin: 2rem 0 5rem;
 }
 .login-container .login-content .login,
 .login-container .login-content .register {
@@ -612,11 +623,16 @@ i {
   background-image: url(../assets/images/img-contact.jpg);
 }
 
+.contact-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6rem;
+}
 .contact-container .contact-content {
   width: 90%;
   display: flex;
   flex-direction: column;
-  margin: 3rem auto;
+  margin: 1rem auto;
 }
 .contact-container .contact-content h3 {
   font-size: 1.2rem;
@@ -665,6 +681,9 @@ i {
 }
 .product-container .product-content .product-detail {
   margin: 1rem auto;
+}
+.product-container .product-content .product-detail .title-product {
+  font-size: 2rem;
 }
 .product-container .product-content .product-detail .product-info {
   display: flex;
@@ -952,7 +971,7 @@ i {
   /* ------------- ESTILOS NOSOTROS ------------ */
   .about-container .about-content {
     max-width: 1280px;
-    margin: 3rem 0;
+    margin-top: 3rem;
   }
   .about-container .about-content .about-img-container .img-mission {
     height: 600px;
